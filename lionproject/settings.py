@@ -136,12 +136,3 @@ MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 # AWS
 
-AWS_ACCESS_KEY_ID = 'AKIASSZD6OR53GMOZFHQ'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'likelion-django-lesson2'
-AWS_S3_SIGNATURE_VERSION = 's3v4'
-AWS_S3_REGION_NAME = 'ap-northeast-2'
-AWS_S3_CUSTOM_DOMAIN = 'd37gx43o3lnt1n.cloudfront.net'
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
